@@ -1,0 +1,22 @@
+<!DOCTYLE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset='UTF-8' />
+  </head>
+  <body>
+    <ul>
+    {{#each games}}
+      <li>
+        <strong><a href="/games/{{@key}}">{{@key}}</a></strong> : {{countPlayers this}} joueur(s)
+        {{#each players}}
+          [ {{name}} ]
+        {{/each}}
+      </li>
+    {{/each}}
+      <li>
+        <strong><a href="/games/new">new game</a></strong>
+      </li>
+    </ul>
+  </body>
+</html>

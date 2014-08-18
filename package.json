@@ -1,0 +1,11 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "consolidate": "^0.10.0",
+    "express": "^4.4.1",
+    "handlebars": "^2.0.0-alpha.4",
+    "socket.io": "^1.0.4"
+  }
+}

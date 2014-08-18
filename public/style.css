@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/fonts/BebasNeue.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 8, style.scss */
+html, body {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #EEE;
+}
+
+/* line 16, style.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 20, style.scss */
+svg {
+  background-color: #EEE;
+  display: block;
+  margin: auto;
+}
+/* line 25, style.scss */
+svg text {
+  font-family: "BebasNeue";
+  font-weight: normal;
+  alignment-baseline: middle;
+  text-anchor: middle;
+  fill: black;
+}
+/* line 33, style.scss */
+svg text.start-countdown {
+  font-size: 64px;
+}
+/* line 37, style.scss */
+svg text.state {
+  font-size: 32px;
+  alignment-baseline: before-edge;
+  text-anchor: end;
+}
+/* line 44, style.scss */
+svg circle {
+  cursor: pointer;
+}
+/* line 49, style.scss */
+svg .scoreboard text {
+  font-size: 24px;
+}
