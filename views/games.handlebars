@@ -1,22 +1,40 @@
 <!DOCTYLE html>
 <html>
-  <head>
-    <title></title>
-    <meta charset='UTF-8' />
-  </head>
-  <body>
-    <ul>
-    {{#each games}}
-      <li>
-        <strong><a href="/games/{{@key}}">{{@key}}</a></strong> : {{countPlayers this}} joueur(s)
-        {{#each players}}
-          [ {{name}} ]
-        {{/each}}
-      </li>
-    {{/each}}
-      <li>
-        <strong><a href="/games/new">new game</a></strong>
-      </li>
-    </ul>
-  </body>
+    <head>
+        <title></title>
+        <meta charset='UTF-8' />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <h1>Clicliclick</h1>
+            
+            <h2>How to play</h2>
+            <p>
+                The goal is to own more bubbles than your opponent(s) at the end of the countdown.<br />
+                To get a bubble, click on it, it will takes your color,
+                and if a bubble is in the same line,
+                column or diagonal you'll gain every bubble between them (if someone else already own it).
+            </p>
+            <p>If nobody wants to play with you :( open a second tab ;)</p>
+            
+            <h2>Game list</h2>
+            <ul>
+                {{#each games}}
+                <li>
+                    <strong><a href="/games/{{@key}}">{{@key}}</a></strong> : {{countPlayers this}} player(s)
+                    {{#each players}}
+                    <span class="player">[ {{name}} ]</span>
+                    {{/each}}
+                </li>
+                {{/each}}
+                <li>
+                    <strong><a href="/games/new">start a new game</a></strong>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <a href="https://github.com/etienne-gauvin/clicliclick">github.com/etienne-gauvin/clicliclick</a>
+        </footer>
+    </body>
 </html>

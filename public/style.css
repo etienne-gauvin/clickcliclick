@@ -4,49 +4,101 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 8, style.scss */
 html, body {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #EEE;
+  font-family: "BebasNeue", sans-serif;
 }
 
-/* line 16, style.scss */
-h1 {
+/* line 17, style.scss */
+main, footer {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+/* line 22, style.scss */
+main a, footer a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 26, style.scss */
+main a:hover, main a:active, footer a:hover, footer a:active {
+  text-decoration: underline;
+}
+
+/* line 32, style.scss */
+footer {
+  margin-top: 4em;
   text-align: center;
 }
 
-/* line 20, style.scss */
+/* line 37, style.scss */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em 0;
+}
+
+/* line 43, style.scss */
+h2 {
+  font-weight: normal;
+  font-style: italic;
+  border-bottom: 3px solid #cecece;
+}
+
+/* line 49, style.scss */
+p {
+  color: #626262;
+  font-size: 1.5em;
+}
+
+/* line 54, style.scss */
+li {
+  font-family: "BebasNeue", sans-serif;
+  font-size: 2em;
+  color: #626262;
+}
+/* line 59, style.scss */
+li strong {
+  font-weight: normal;
+}
+/* line 63, style.scss */
+li .player {
+  color: #b7b7b7;
+}
+
+/* line 68, style.scss */
 svg {
   background-color: #EEE;
   display: block;
   margin: auto;
 }
-/* line 25, style.scss */
+/* line 73, style.scss */
 svg text {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
   font-weight: normal;
   alignment-baseline: middle;
   text-anchor: middle;
   fill: black;
 }
-/* line 33, style.scss */
+/* line 81, style.scss */
 svg text.start-countdown {
   font-size: 64px;
 }
-/* line 37, style.scss */
+/* line 85, style.scss */
 svg text.state {
   font-size: 32px;
   alignment-baseline: before-edge;
   text-anchor: end;
 }
-/* line 44, style.scss */
+/* line 92, style.scss */
 svg circle {
   cursor: pointer;
 }
-/* line 49, style.scss */
+/* line 97, style.scss */
 svg .scoreboard text {
   font-size: 24px;
 }
