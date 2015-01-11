@@ -47,8 +47,8 @@ app.get('/', function(req, res)
 });
 
 // Ouverture du serveur
-http.listen(3000, function() {
-  console.log('listening on *:3000');
+http.listen(8085, function() {
+  console.log('listening on *:8085');
 });
 
 // Helper pour compter le nombre de joueurs
